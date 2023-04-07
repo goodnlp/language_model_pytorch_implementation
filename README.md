@@ -1,4 +1,4 @@
-# 自己实现pytorch版本的GPT模型 - end to end implementation of pytorch version GPT 
+# 实现Pytorch版本的GPT模型
 
 ## 为什么要自己从头实现GPT?
 
