@@ -16,6 +16,9 @@
 下面对pytorch_gpt_cpu_single_gpu.ipynb的代码进行解释。
 
 ```python
+from transformers import BertTokenizer, BertModel
+import numpy as np
+
 class utils(object):
   def __init__(self,path=None):
     self.path=path
