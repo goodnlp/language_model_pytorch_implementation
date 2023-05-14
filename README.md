@@ -11,7 +11,9 @@
 
 ## 模型代码解读
 
-模型代码在同目录的pytorch-gpt文件夹中，包含两个jupyter notebooks。下面对cpu_single_gpu版本的gpt模型代码进行解说。
+模型代码在同目录的pytorch-gpt文件夹中，包含两个jupyter notebooks。其中pytorch_gpt_cpu_single_gpu.ipynb是运行于cpu或者单个gpu的计算环境中的；pytorch_gpt_multigpu.ipynb是运行于多个gpu计算环境中的。
+
+下面对pytorch_gpt_cpu_single_gpu.ipynb的代码进行解释。
 
 ```python
 # 使用pytorch数据格式
