@@ -50,6 +50,9 @@ utils是一个数据预处理的class，输入文本文件的路径，文件中�
 * 第二步，把每一个句子中的token逐一对应为数字索引
 * 第三步，转化为数字索引后，需要对有些句子的索引补零，使得所有的句子索引都是一样长度的，方便后面输入GPT模型进行批量操作。
 
+<br />
+<br />
+
 ```python
 
 class AttentionHead(nn.Module):
@@ -75,6 +78,9 @@ class AttentionHead(nn.Module):
  ```
 Attentionhead 定义了标准注意力机制的操作过程，Attention(q,k,v) = softmax( ${q \times k^T}\over{\sqrt d_k}$ ) * v
 
+
+<br />
+<br />
 
 
 ## 参考
