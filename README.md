@@ -82,6 +82,25 @@ Attentionhead 定义了标准注意力机制的操作过程，Attention(q,k,v) =
 <br />
 <br />
 
+class MultiHeadAttention(nn.Module):
+    def __init__(self, num_heads: int, dim_in: int, dim_k: int, dim_v: int):
+        super().__init__()
+        self.heads = nn.ModuleList(
+            [AttentionHead(dim_in, dim_k, dim_v) for _ in range(num_heads)]
+        )
+        self.linear = nn.Linear(num_heads * dim_v, dim_in)
+
+    def forward(self, query: Tensor, key: Tensor, value: Tensor, mask) -> Tensor: ## 传入mask
+        return self.linear(
+            torch.cat([h(query, key, value,mask) for h in self.heads], dim=-1)
+        )
+
+这里实现了包含多个注意力头的类， 是为了在embedding的多个不同的子空间分别做注意力操作，然后计算结果再简单地合并起来，合并起来的结果再输入一个全连接层。
+
+<br />
+<br />
+
+
 
 ## 参考
 * (1) https://towardsdatascience.com/pre-processing-a-wikipedia-dump-for-nlp-model-training-a-write-up-3b9176fdf67
