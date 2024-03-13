@@ -1,4 +1,4 @@
-# Language Model Implementations
+# Language Model Implementation in Pytorch
 
 This repository is a collection of various language model implementations, ranging from simple RNN-based models to advanced transformer architectures. Our goal is to provide a comprehensive resource for researchers, developers, and enthusiasts interested in exploring different aspects of natural language processing and understanding through practical code examples and detailed documentation.
 
