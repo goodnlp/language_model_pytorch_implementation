@@ -21,9 +21,10 @@ Language models are at the heart of many NLP tasks, including text generation, s
 ## Models Included
 
 This repository includes implementations for the following language models:
-- RNN (Recurrent Neural Network)
-- LSTM (Long Short-Term Memory)
-- GRU (Gated Recurrent Unit)
+- TF and TFIDF
+- word2vec
+- seq2seq
+- see2seq with attention
 - Transformer
 - BERT (Bidirectional Encoder Representations from Transformers)
 - GPT (Generative Pre-trained Transformer)
@@ -31,9 +32,7 @@ This repository includes implementations for the following language models:
 
 Each model directory contains the following:
 - Source code
-- Pre-trained models (if available)
-- Documentation on how to train, validate, and deploy the models
-- Examples and tutorials
+- Documentation and tutorials to walk through the code
 
 ## Getting Started
 
