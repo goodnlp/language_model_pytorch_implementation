@@ -48,8 +48,8 @@ To get started with these implementations, follow the steps below.
 
 Clone the repository to your local machine: 
 ```
-git clone https://github.com/yourusername/language-model-implementations.git
-cd language-model-implementations
+git clone https://github.com/yourusername/language_model_implementations.git
+cd language_model_implementations
 pip install -r requirements.txt
 ```
 
