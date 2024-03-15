@@ -24,10 +24,10 @@ This repository includes implementations for the following language models:
 - TF and TFIDF
 - word2vec
 - seq2seq
-- see2seq with attention
+- seq2seq with attention
 - Transformer
-- BERT (Bidirectional Encoder Representations from Transformers)
 - GPT (Generative Pre-trained Transformer)
+- BERT (Bidirectional Encoder Representations from Transformers)
 - [Add more models as necessary]
 
 Each model directory contains the following:
