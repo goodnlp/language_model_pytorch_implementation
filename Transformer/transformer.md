@@ -19,7 +19,7 @@ src进入encoder，encoder按照数据流动的先后顺序，依次是embedding
 
 tgt经过 (attention layer + feedforward layer)处理后，tgt可以表征为[vector_d1, vector_d2, vector_d3]， 当要预测“吃”这个字的时候，vector_d1会和enc_out做attention_score的计算（这就是cross attention），假设attention_score = [0.1, 0.3, 0.6], 那么得到一个向量dec_out = 0.1*vector_e1 + 0.3*vector_e2 + 0.6*vector_e3 + vector_d1， dec_out进入全连接层，然后进行softmax计算得到一个针对当前词库的概率分布，得到概率分布就可以带入损失函数计算得到损失，这样前向传播的过程就完成。反向传播就是将损失依照导数链式法则传播到各个权重层，从而更新每一个权重参数。
 
-以上就完成了一次transformer模型的参数更新过程，也就是模型训练的过程，看是高大上的模型也没有很复杂吧。
+以上就完成了一次transformer模型的参数更新过程，也就是模型训练的过程，看似高大上的模型也没有很复杂吧。
 
 
 ## 训练数据
