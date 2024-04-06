@@ -1,4 +1,4 @@
-"""pytorch_transformer.ipynb
+"""
 transformer implementation in pytorch
 """
 
