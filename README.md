@@ -25,9 +25,12 @@ This repository includes implementations for the following language models:
 - word2vec
 - seq2seq
 - seq2seq with attention
+- Bidirectional lstm
 - Transformer
 - GPT (Generative Pre-trained Transformer)
 - BERT (Bidirectional Encoder Representations from Transformers)
+- ChatGPT
+- Diffusion transformer
 - [Add more models as necessary]
 
 Each model directory contains the following:
